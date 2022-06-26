@@ -113,8 +113,8 @@ input:focus, textarea:focus {
 /* ======= B U T T O N S ======= */
 
 .button {
-  background-color: var(--brand-color);
-  color: var(--text-color2);
+  background-color: var(--brand-main-color);
+  color: var(--text-second-color);
   font-size: 16px;
   width: 200px;
   font-weight: 500;
@@ -235,25 +235,7 @@ input:focus, textarea:focus {
 
 /* ======= F I R S T  S E C T I O N ======= */
 
-.main-contanier {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-header {
-  font-size: 44px;
-  font-weight: 900;
-  font-style: normal;
-  line-height: 1.36em;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: var(--text-color2);
-  width: 696px;
-  padding-bottom: 30px;
-} 
- 
-.main-header-background1 {
+.banner {
   background-image:  
                 linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4),
@@ -269,7 +251,27 @@ input:focus, textarea:focus {
   justify-content: center;
 }
 
-.main-button {
+.banner__contanier {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner__tittle {
+  font-size: 44px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.36em;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--text-second-color);
+  width: 696px;
+} 
+
+.banner__tittle--down {
+  margin-bottom:30px;
+}
+ 
+.banner__button {
   width: 200px;
   height: 50px;
   justify-content: space-evenly;
