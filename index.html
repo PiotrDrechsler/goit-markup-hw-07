@@ -20,13 +20,16 @@
   </head>
 
   <!---- ======= B O D Y ======= -->
+
   <body class="body">
+
     <!---- ======= H E A D E R ======= -->
     <header class="body-header">
       <div class="contanier">
           <a href="./index.html" class="logo logo--right logo--light-theme">
             <span class="logo__accent-text">Web</span><span>Studio</span>
           </a>
+          <nav>
           <ul class="navigation list">
             <li class="navigation__item navigation__item--right">
               <a href="./index.html" class="navigation__link navigation__link--active link">Agencja</a>
@@ -37,7 +40,8 @@
             <li class="navigation__item">
               <a href="" class="navigation__link link">Kontakt</a>
             </li>
-          </ul> 
+          </ul>
+          </nav> 
           <ul class="contact contact--left contact--right list">    
             <li class="contact__item contact__item--right">
               <a href="mailto:info@devstudio.com" class="contact__link link">
@@ -57,7 +61,7 @@
 
     <!---- ======= M A I N ======= -->
 
-    <!---- ======= F I R S T  S E C T I O N ======= -->
+    <!---- ======= B A N N E R ======= -->
 
     <main>
       <section class="banner__section banner__background section">
@@ -67,7 +71,7 @@
         </div>
       </section>
 
-      <!---- ======= S E C O N D  S E C T I O N ======= -->
+      <!---- ======= B L O C K  S E C T I O N======= -->
 
       <section class="block__section section">
         <div class="contanier">
@@ -136,7 +140,7 @@
         </div>
       </section>
 
-      <!---- ======= T H I R D  S E C T I O N ======= -->
+      <!---- ======= W O R K S  S E C T I O N ======= -->
 
       <section class="works-sectionn works-section--top section">
         <div class="works-section__contanier contanier">
@@ -173,7 +177,7 @@
         </div>
       </section>
 
-      <!---- ======= C R E W  S E C T I O N ======= -->
+      <!---- ======= T E A M   S E C T I O N ======= -->
 
       <section class="team-section team-section__background section">
         <div class="team-section__contanier contanier">
@@ -351,7 +355,7 @@
       </section>
     </main>
 
-    <!---- ======= O U R  C L I E N T S ======= -->
+    <!---- ======= C L I E N T S  S E C T I O N ======= -->
 
     <section class="clients-section section" >
       <div class="clients-section__contanier contanier">
@@ -478,43 +482,43 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-btn" data-modal-close>
-         <svg class="x" width="18" height="18">
+        <button class="modal__close-btn" data-modal-close>
+         <svg class="modal__close-btn__icon" width="18" height="18">
            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h3 class="head-modal">Zostaw swoje dane w formularzu poniżej</h3> 
-        <form class="form-modal" name="singup-form">
-          <label class="modal-label" for="username">Imię  
-            <svg class="form-icon" width="18" height="18" style="top:39px">
+        <h3 class="modal__head">Zostaw swoje dane w formularzu poniżej</h3> 
+        <form class="form" name="singup-form">
+          <label class="form__label" for="username">Imię  
+            <svg class="form__icon" width="18" height="18" style="top:39px">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
-              <input class="form-input" name="username" type="text" id="username" required></input>
+              <input class="form__input" name="username" type="text" id="username" required></input>
           </label>
-          <label class="modal-label" for="phone">Telefon
-            <svg class="form-icon" width="18" height="18" style="top:108px">
+          <label class="form__label" for="phone">Telefon
+            <svg class="form__icon" width="18" height="18" style="top:108px">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
-              <input class="form-input" name="phone" type="tel" id="phone" required></input>
+              <input class="form__input" name="phone" type="tel" id="phone" required></input>
           </label>
-          <label class="modal-label" for="email">Email
-            <svg class="form-icon" width="18" height="18" style="top:175px">
+          <label class="form__label" for="email">Email
+            <svg class="form__icon" width="18" height="18" style="top:175px">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
-              <input class="form-input" name="email" type="email" id="email" required></input>
+              <input class="form__input" name="email" type="email" id="email" required></input>
           </label>
-          <label class="modal-label" for="comment">Komentarz
-            <textarea name="comment" id="comment" type="text" rows="6" placeholder="Wprowadź tekst"></textarea>
+          <label class="form__label" for="comment">Komentarz
+            <textarea class="form__textarea" name="comment" id="comment" type="text" rows="6" placeholder="Wprowadź tekst"></textarea>
           </label>  
-        <div class="checkbox-contanier">
-            <input type="checkbox" class="checkbox-policy visually-hidden" value="accept" name="consent" id="consent" required />
-            <label for="consent" class="checkbox-policy-text">
+        <div class="consent">
+            <input type="checkbox" class="consent__input visually-hidden" value="accept" name="consent" id="consent" required />
+            <label for="consent" class="consent__label">
             Oświadczam iż akceptuję 
             <a href=""> Regulamin</a> i 
             <a href=""> Politykę Prywatności</a>.
             </label> 
         </div>
-        <button class="button form-button" type="submit">Wyślij</button>
+        <button class="form__button button" type="submit">Wyślij</button>
         </form>  
       </div>
      </div>
