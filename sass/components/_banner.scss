@@ -14,11 +14,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
 
-    & .banner__contanier {
-      display: flex;
-      flex-direction: column;
-    }
+  &__contanier {
+    display: flex;
+    flex-direction: column;
   }
 
   &__tittle {
