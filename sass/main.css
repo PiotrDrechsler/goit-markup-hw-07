@@ -209,7 +209,7 @@ textarea:focus {
   transition: var(--transition);
   transition-property: color, fill;
 }
-.contact__link:active, .contact__link:focus, .contact__linkk:hover {
+.contact__link:active, .contact__link:focus, .contact__link:hover {
   color: var(--brand-main-color);
   fill: var(--brand-main-color);
 }
