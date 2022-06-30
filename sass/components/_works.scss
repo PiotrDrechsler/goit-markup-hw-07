@@ -1,24 +1,6 @@
 .works-section {
-  &--top {
-    padding-top: 0;
-  }
-
-  &__contanier {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__head {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17em;
-    letter-spacing: 0.03em;
-
-    &--bottom {
-      margin-bottom: 50px;
-    }
-  }
+  display: flex;
+  flex-direction: column;
 
   &__list {
     display: flex;

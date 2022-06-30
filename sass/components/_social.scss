@@ -1,4 +1,15 @@
 .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &--space-around {
+    margin-bottom: 30px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 16px;
+  }
+
   &__contanier {
     display: flex;
     flex-direction: column;
@@ -30,7 +41,7 @@
     }
   }
 
-  &__link {
+  &__link--dark-theme {
     display: flex;
     width: 44px;
     height: 44px;
@@ -47,6 +58,27 @@
     &:focus,
     &:hover {
       background-color: var(--brand-main-color);
+    }
+  }
+
+  &__link--light-theme {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    fill: var(--vector-team-color);
+    background-color: #ffffff1a;
+    transition: var(--transition);
+    transition-property: background-color;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: var(--brand-main-color);
+      fill: var(--brand-second-color);
     }
   }
 }
